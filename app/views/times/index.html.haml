@@ -1,2 +1,13 @@
-%h1 Times#index
-%p Find me in app/views/times/index.html.haml
+%h1.text-primary Times#index
+%p ここがホームです。
+.wrapper
+  .graphes
+    グラフを表示します。
+    .graphes__time.p-5 学習時間をここに表示します。
+    .graphes__grasses.text-success.p-5 草をここに表示します。
+  .links
+    = link_to new_time_path, class: "text-primary " do
+      時間を記録する
+    %br/
+    = link_to "#" do
+      履歴をすべて見る
