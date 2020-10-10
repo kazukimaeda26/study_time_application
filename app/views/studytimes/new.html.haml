@@ -2,5 +2,12 @@
 %p ここが記録する場所です。
 .wrapper
   = form_for @studytime do |f|
+    %p 時間
+    = f.text_field :hours
+    %br/
+    %br/
+    %p 分
     = f.text_field :minutes
+    %br/
+    %br/
     = f.submit
