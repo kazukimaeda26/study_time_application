@@ -1,13 +1,13 @@
 %h1.text-primary Times#index
 %p ここがホームです。
 .wrapper
-  .graphes
-    グラフを表示します。
-    .graphes__time.p-5 学習時間をここに表示します。今週はあと◯◯時間勉強しましょう！
-    .graphes__grasses.text-success.p-5 草をここに表示します。
+  = render @studytimes
+  .graphes__time.p-5 学習時間をここに表示します。今週はあと◯◯時間勉強しましょう！
+  .graphes__grasses.text-success.p-5 草をここに表示します。
   .links
     = link_to new_studytime_path, class: "text-primary " do
       時間を記録する
+    %br/
     %br/
     = link_to "#" do
       履歴をすべて見る

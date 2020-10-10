@@ -1,5 +1,6 @@
 class StudytimesController < ApplicationController
   def index
+    @studytimes = Studytime.all
   end
 
   def new
